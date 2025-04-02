@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>나무위키:김기태</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Malgun Gothic', sans-serif;
+      background-color: #f6f6f6;
+      color: #202020;
+    }
+    header {
+      background-color: #00c292;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    header nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    .content {
+      flex: 3;
+      padding-right: 20px;
+    }
+    .sidebar {
+      flex: 1;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 15px;
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 28px;
+      border-bottom: 2px solid #ccc;
+      margin-top: 0;
+      padding-bottom: 10px;
+    }
+    .document-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .document-header button {
+      font-size: 13px;
+      padding: 5px 10px;
+      border: 1px solid #aaa;
+      background-color: #f1f1f1;
+      cursor: pointer;
+    }
+    .document-header button:hover {
+      background-color: #ddd;
+    }
+    .toc {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .toc b {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .toc a {
+      display: block;
+      margin-left: 15px;
+      text-decoration: none;
+      color: #0070c0;
+    }
+    h2 {
+      border-left: 5px solid #aaa;
+      padding-left: 10px;
+      margin-top: 40px;
+    }
+    p {
+      line-height: 1.7;
+    }
+    ul {
+      margin-left: 25px;
+    }
+
+    /* 모달 */
+    .modal-background {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.5);
+    }
+    .modal-content {
+      background-color: #fff;
+      margin: 15% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      position: relative;
+      text-align: center;
+    }
+    .modal-close {
+      position: absolute;
+      top: 8px;
+      right: 12px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    /* 검색창 */
+    .search-bar {
+      display: flex;
+      align-items: center;
+    }
+    .search-bar input {
+      padding: 5px;
+      font-size: 14px;
+      border: none;
+      border-radius: 4px;
+    }
+    .search-bar button {
+      background-color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">나무위키</div>
+    <nav>
+      <a href="#">최근 변경</a>
+      <a href="#">토론</a>
+      <a href="#">특수 기능</a>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="여기에서 검색">
+      <button>🔍</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="content">
+      <div class="document-header">
+        <h1>나무위키:김기태</h1>
+        <button onclick="openModal()">편집</button>
+        <button>토론</button>
+        <button>역사</button>
+      </div>
+
+      <div class="toc">
+        <b>목차</b>
+        <a href="#s1">1. 개요</a>
+        <a href="#s2">2. 생애</a>
+        <a href="#s3">3. 성격 및 평가</a>
+        <a href="#s4">4. 여담</a>
+      </div>
+
+      <h2 id="s1">1. 개요</h2>
+      <p>김기태는 대한민국의 직장인으로, 현재 하이에어코리아 기업에서 차장으로 재직 중인 인물이다. 조직 내에서의 성실함과 책임감을 바탕으로 다양한 프로젝트를 이끌었으며, 동료들에게 신뢰받는 리더로 알려져 있다.</p>
+
+      <h2 id="s2">2. 생애</h2>
+      <ul>
+        <li>1987년 8월 15일 출생.</li>
+        <li>2008년 하버드 대학교 경영학과 졸업.</li>
+        <li>2009년 하이에어코리아 기업 입사. 초기에는 전산팀 소속.</li>
+        <li>2015년 대리 승진</li>
+        <li>2020년 차장으로 승진, 현재까지 활동 중.</li>
+      </ul>
+
+      <h2 id="s3">3. 성격 및 평가</h2>
+      <p>꼼꼼하고 체계적인 성격으로 평가받는다. 회의에서는 핵심을 짚는 발언을 자주 하며, 실무 능력은 물론 후배 교육에도 적극적인 모습을 보인다. 특히 타 부서와의 협업에서 중재자 역할을 잘 수행하여, 사내에서는 '차분한 해결사'라는 별명이 붙기도 했다.</p>
+
+      <h2 id="s4">4. 여담</h2>
+      <ul>
+        <li>커피를 매우 좋아하며, 하루 평균 3잔 이상 마시는 것으로 알려져 있다.</li>
+        <li>업무 외 시간에는 독서와 등산을 즐긴다.</li>
+        <li>사내 워크숍에서 회식 총무를 자청할 정도로 적극적인 스타일이다.</li>
+      </ul>
+    </div>
+
+    <div class="sidebar">
+      <b>최근 변경</b>
+      <ul>
+        <li>닌텐도 스위치 2 (10초 전)</li>
+        <li>2025 LoL 챔피언스 코리아 (30초 전)</li>
+        <li>박충권 (1분 전)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 모달 -->
+  <div class="modal-background" id="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeModal()">×</span>
+      <p>아라므 대리므니므 때문에<br>수정 불가합니다.</p>
+    </div>
+  </div>
+
+  <script>
+    function openModal() {
+      document.getElementById("modal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById("modal");
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
